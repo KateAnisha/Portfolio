@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px auto auto 80px;
+    grid-template-areas: "header header"
+                         "main main"
+                         "contact contact"
+                         "footer footer"
+    ;
+
+}
+
+/* Navigation Styling */
+
+header { 
+    background-color: #ddbeda;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    /* position: fixed;
+    width: 100%; */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+ul a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Typography Styling */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    padding: auto;
+    letter-spacing: 2px;
+    color: #fff;
+    
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline solid #ddbeda 5px;
+    color: #ddbeda;
+    font-size: 3em;
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+p {
+    color: #848082;
+}
+
+
+/* Content Styling */
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+}
+
+button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #fac9cc;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    color:#fff;
+    background-image: linear-gradient(to left, #ddbeda, #fac9cc);
+    box-shadow: 5px 5px 8px rgba(41,41,41,.25);
+
+}
+
+
+.contact {
+    grid-area: contact;
+    
+}
+
+
+.contact-form  {
+    background-color: #c9e8e2;
+    padding: 0;
+    margin-top: -7px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 5% 60px 5%;
+}
+
+/* contact form styling */
+
+input[type=text],[type=email] {
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input:focus {
+    background-color: #eeecec;
+    outline: none;
+}
+
+::placeholder {
+    color: #848082;
+}
+
+input, select {
+    color: #848082;
+}
+input[type=submit] {
+    border-radius: 50px;
+    padding: 8px 18px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #fac9cc;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    color:#fff;
+    background-image: linear-gradient(to left, #ddbeda, #fac9cc);
+    box-shadow: 5px 5px 8px rgba(41,41,41,.25);
+
+}
+
+
+
+/* Footer Styling */
+
+footer {
+    grid-area: footer;
+    background-color: #ddbeda;
+}
