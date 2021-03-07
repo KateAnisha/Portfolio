@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fcf7f5; /* fcf2ef*/
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 60px auto auto 80px;
@@ -21,7 +21,7 @@ body {
 /* Navigation Styling */
 
 header { 
-    background-color: #ddbeda;
+    background-color: #3eb7b2;
     grid-area: header;
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,11 @@ ul a {
     font-weight: bold;
 }
 
+li:hover{
+    border-bottom: 4px solid;
+
+}
+
 
 /* Typography Styling */
 
@@ -60,8 +65,8 @@ h1 {
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    text-decoration: underline solid #ddbeda 5px;
-    color: #ddbeda;
+    text-decoration: underline solid #3eb7b2 5px;
+    color: #3eb7b2;
     font-size: 3em;
     padding: 20px 0;
     letter-spacing: 3px;
@@ -93,7 +98,8 @@ button {
     text-align: center;
     border: none;
     color: #fff;
-    background-color: #fac9cc;
+    font-weight: bold;
+    background-color: #6ed1bf;
     font-size: 1em;
     letter-spacing: 2px;
     margin-top: 30px;
@@ -102,7 +108,7 @@ button {
 button:hover {
     cursor: pointer;
     color:#fff;
-    background-image: linear-gradient(to left, #ddbeda, #fac9cc);
+    background-image: linear-gradient(to left, #6ed1bf, #ffd4c1); 
     box-shadow: 5px 5px 8px rgba(41,41,41,.25);
 
 }
@@ -115,16 +121,21 @@ button:hover {
 
 
 .contact-form  {
-    background-color: #c9e8e2;
+    background-color: #fae8e2; /*e4e4e4*/
     padding: 0;
     margin-top: -7px;
     display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items: align-self;
     padding: 0 5% 60px 5%;
 }
 
+
 /* contact form styling */
+
+form {
+    margin-top: 26px;
+}
 
 input[type=text],[type=email] {
     background-color: #fff;
@@ -136,7 +147,7 @@ input[type=text],[type=email] {
 }
 
 input:focus {
-    background-color: #eeecec;
+    background-color: #fcf7f5;
     outline: none;
 }
 
@@ -153,7 +164,7 @@ input[type=submit] {
     text-align: center;
     border: none;
     color: #fff;
-    background-color: #fac9cc;
+    background-color: #6ed1bf;
     font-size: 1em;
     letter-spacing: 2px;
     margin-top: 30px;
@@ -162,7 +173,7 @@ input[type=submit] {
 input[type=submit]:hover {
     cursor: pointer;
     color:#fff;
-    background-image: linear-gradient(to left, #ddbeda, #fac9cc);
+    background-image: linear-gradient(to left, #ffd4c1, #6ed1bf);
     box-shadow: 5px 5px 8px rgba(41,41,41,.25);
 
 }
@@ -173,5 +184,5 @@ input[type=submit]:hover {
 
 footer {
     grid-area: footer;
-    background-color: #ddbeda;
+    background-color: #3eb7b2;
 }
