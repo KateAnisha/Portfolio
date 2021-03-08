@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kate Brandley - Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
 <!-- Navigation-->
     <header> 
-            <h1>Kate Brandley</h1>
+            <img src="logo.svg" alt="Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,46 +29,54 @@
     <main>
         <div class="main-content">
             <h2>Hello! </h2>
-            <h3>A blog post</h3>
-            <h4>K Brandley 8 March 2021</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, inventore. Odio mollitia nulla inventore rem nam iusto eveniet vel illum aliquid voluptatem omnis laborum, placeat sapiente quaerat? Tenetur, saepe. Alias?</p>
-            <button class="main-btn">Work with me</button>
+         
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, inventore. Odio mollitia nulla inventore rem nam iusto eveniet vel illum aliquid voluptatem omnis laborum, placeat sapiente quaerat? Tenetur, saepe. Alias?
+
+            </p>
+            
         </div>
         <div class="main-img">
-            <img src="" alt="Logo" class="home-img">
+            <img src="home-img.jpg" alt="A picture of a laptop" class="home-img">
         </div>
     </main>
 
-    <!-- <section class="contact"> 
-        <div class="contact-form">
-            <div class="contact-content">
-                <h2>Contact me</h2>
-                <p> 
-                    Lets work together to bring your next project to life!  
-                </p>
-            </div>
-            <form id="contact" method="post">
-                
-                <input placeholder="Your name" type="text" required alt="your name">
-                <input placeholder="Email address" type="email" required alt="your email">
-                <input placeholder="Message" type="text" required alt="Your message">
-                <input type="submit" value="Submit" alt="submit">
-            </form>
+    <section class="cta">
+        <div class="cta-content">
+            <h5>Let's work together! </h5>
+            
         </div>
-    </section> -->
-
-    <section class="parallax">
-        <div class="parallax-bg">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nostrum corrupti, commodi suscipit perferendis fuga cupiditate atque debitis. Quasi minus ex quos. Facere maiores, voluptas voluptate neque corporis quae amet asperiores accusantium enim quam sit totam! Impedit doloribus minima cum consectetur atque doloremque esse quo, aliquid, et pariatur cumque quia optio quaerat. Soluta ipsam eum aperiam itaque veniam, sequi eos.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nostrum corrupti, commodi suscipit perferendis fuga cupiditate atque debitis. Quasi minus ex quos. Facere maiores, voluptas voluptate neque corporis quae amet asperiores accusantium enim quam sit totam! Impedit doloribus minima cum consectetur atque doloremque esse quo, aliquid, et pariatur cumque quia optio quaerat. Soluta ipsam eum aperiam itaque veniam, sequi eos.</p>
+        <a href="contact.html"><button class="main-btn">Contact me!</button></a>
 
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nostrum corrupti, commodi suscipit perferendis fuga cupiditate atque debitis. Quasi minus ex quos. Facere maiores, voluptas voluptate neque corporis quae amet asperiores accusantium enim quam sit totam! Impedit doloribus minima cum consectetur atque doloremque esse quo, aliquid, et pariatur cumque quia optio quaerat. Soluta ipsam eum aperiam itaque veniam, sequi eos.</p>
+    </section>
+
+    <section class="areas">
+        <div class="area-content">
+            <div class="area-info">
+                <ion-icon name="desktop-outline" class="area-icon"></ion-icon>
+                <p>Web Design</p> 
+                <ion-icon name="caret-forward-outline" class="area-icon arrow"></ion-icon>
+            </div>
+        </div>
+
+        <div class="area-content">
+            <div class="area-info">
+                <ion-icon name="code-slash-outline" class="area-icon"></ion-icon>
+                <p>Web Development</p> 
+                <ion-icon name="caret-forward-outline"  class="area-icon arrow"></ion-icon>
+            </div>
+        </div>
+
+        <div class="area-content">
+            <div class="area-info">
+                <ion-icon name="phone-portrait-outline" class="area-icon"></ion-icon>
+                <p>App design</p>
+                <ion-icon name="caret-forward-outline" class="area-icon arrow"></ion-icon>
+            </div>
+        </div>
+        
 
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nostrum corrupti, commodi suscipit perferendis fuga cupiditate atque debitis. Quasi minus ex quos. Facere maiores, voluptas voluptate neque corporis quae amet asperiores accusantium enim quam sit totam! Impedit doloribus minima cum consectetur atque doloremque esse quo, aliquid, et pariatur cumque quia optio quaerat. Soluta ipsam eum aperiam itaque veniam, sequi eos.</p>
-    </div>
     </section>
 
     <section class="wave">
@@ -80,16 +88,14 @@
     <footer>
         
         <div class="footer-logo">
-            <img src="" alt="Logo">
+            <img src="logo.svg" alt="Logo" class="logo">
         </div>
-        <div class="footer-links">
-
-        </div>
+ 
         <div class="social-icons">
-            <ion-icon name="logo-facebook" alt="Facebook"></ion-icon>
-            <ion-icon name="logo-twitter" alt="Twitter"></ion-icon>
-            <ion-icon name="logo-github" alt="Github"></ion-icon>
-            <ion-icon name="logo-linkedin" alt="LinkedIn"></ion-icon>
+            <a href="https://www.facebook.com/AnishaDesignsOfficial" target="_blank"><ion-icon name="logo-facebook" alt="Facebook" class="social"></ion-icon></a>
+            <a href="https://github.com/KateAnisha" target="_blank"><ion-icon name="logo-twitter" alt="Twitter"class="social"></ion-icon></a>
+            <a href="https://github.com/KateAnisha" target="_blank"><ion-icon name="logo-github" alt="Github"class="social"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/kate-brandley-767b85116/" target="_blank"><ion-icon name="logo-linkedin" alt="LinkedIn"class="social"></ion-icon></a>
         </div>
     </footer>
     <script src="script.js"></script>

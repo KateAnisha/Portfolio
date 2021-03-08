@@ -14,10 +14,11 @@ body {
     background-color: #fcf7f5; /* fcf2ef*/
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 60px auto auto auto 80px;
+    grid-template-rows: 60px auto auto auto auto 120px;
     grid-template-areas: "header header"
                          "main main"
-                         "parallax parallax"
+                         "cta cta"
+                         "area area"
                          "wave wave"
                          "footer footer"
     ;
@@ -36,6 +37,12 @@ header {
     box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     /* position: fixed;
     width: 100%; */
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    
 }
 
 ul {
@@ -64,17 +71,22 @@ li a:hover{
 
 /* Typography Styling */
 
-h1 {
+h1, h2, h5 {
     font-family: 'Roboto', sans-serif;
-    padding: auto;
-    letter-spacing: 2px;
-    color: #fff;
-
+}
+p, h4 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #848082;   
 }
 
+h1 {
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+
+
 h2 {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline solid #3eb7b2 5px;
     color: #3eb7b2;
     font-size: 3em;
     padding: 20px 0;
@@ -94,11 +106,12 @@ h4 {
     padding: 12px 0;
 }
 
-p, h4 {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #848082;
-    
+h5 {
+    font-size: 2em;
+    color: #3eb7b2;
 }
+
+
 
 p {
     font-family: 'Noto Sans JP', sans-serif;
@@ -112,11 +125,25 @@ p {
 main {
     grid-area: main;
     display: flex;
-    justify-content: space-between;
+    justify-content: center
     align-items: center;
     padding: 0 5%;
+    margin: 80px 0;
     
 }
+
+
+
+.home-img {
+    width: 80%;
+    height: auto;
+    margin-left: 150px;
+    
+
+}
+
+
+/* buttons */
 
 button {
     border-radius: 50px;
@@ -127,7 +154,7 @@ button {
     background-color: #6ed1bf;
     font-size: 1em;
     letter-spacing: 2px;
-    margin-top: 30px;
+    
     
 }
 
@@ -137,53 +164,68 @@ button:hover {
     background-image: linear-gradient(to left, #6ed1bf, #ffd4c1); 
     box-shadow: 5px 5px 8px rgba(41,41,41,.25);
     font-weight: bold;
-
+    border: 2px solid #3eb7b2;
 }
 
 
-/* contact form styling */
-/* 
+
+
+/* contact form */
+
 .contact {
-    grid-area: contact;
+    grid-area: main;
    
 }
 
 .contact-form  {
-    background-color: #fae8e2;
-    padding: 0;
-    margin-top: -7px;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between; 
-    align-items: align-self;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 0 5% 60px 5%;
 }
- */
+ 
 
-
-
-/* form {
+form {
     margin-top: 26px;
 }
 
-input[type=text],[type=email] {
-    background-color: #fff;
+input[type=text],[type=email],textarea {
+    background-color: #feebe3;
     border: none;
     padding: 8px;
     border-radius: 50px;
     width: 100%;
     margin-top: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-input:focus {
-    background-color: #fcf7f5;
+textarea  {
+    height: 100px;
+    background-color: #feebe3;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+
+input:focus, textarea:focus {
+    background-color: #fff;
     outline: none;
+    
 }
 
 ::placeholder {
     color: #848082;
 }
 
-input, select {
+
+input, select, textarea {
     color: #848082;
 }
 input[type=submit] {
@@ -210,39 +252,79 @@ input[type=submit]:hover {
     height: 40px;
     font-weight: bold;
 
-} */
+} 
 
 
-/* Parallax */
-.parallax {
-    grid-area: parallax;
-    background-image: url('parallax.svg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 100px 0;
-    overflow: hidden;
+.cta {
+    grid-area: cta;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 200px;
+    background-color: #fcdbcd;
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* areas */
+
+.areas {
+    grid-area: area;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.area-content {
+    width: 250px;
+    height: 80px;
+    box-shadow: 5px 5px 8px #b1b1b1;
+    padding: 20px;
+}
+
+.area-content:hover{
+    background-color: #f2edea;
+}
+
+.area-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.area-icon {
+    color: #ffaa81;
+    font-size: 28px;
 
 }
+
+.area-info > p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+
 
 /* Footer Styling */
 
 .wave {
     width: 100%;
     grid-area: wave;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
 
 }
 
 
-ion-icon {
+.social {
     color: teal;
     font-size: 35px;
     padding-left: 14px;
 }
 
-ion-icon:hover {
+.social:hover {
     color: #ffd4c1;
 }
 
@@ -252,6 +334,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    height: 120px;
+    padding-bottom: 30px;
     
 }

@@ -1,0 +1,47 @@
+
+
+body {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 60px auto auto auto auto 120px;
+    grid-template-areas: "header header"
+                         "hero hero"
+                         "featured featured"
+                         "reading info"
+                         "categories"
+                         "footer footer"
+    ;
+
+}
+
+head {
+    grid-area: header;
+}
+main {
+    grid-area: hero;
+    background-image: url("hero.jpg");
+    width: auto;
+    height: 100vh;
+
+}
+
+.featured {
+    grid-area: featured;
+}
+
+article {
+    grid-area: reading;
+}
+
+aside {
+    grid-area: info;
+}
+
+.categories {
+    grid-area: categories;
+}
+
+
+footer {
+    grid-area: footer;
+}
