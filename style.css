@@ -1,18 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans+JP:wght@300&family=Roboto&display=swap');
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #fcf7f5; /* fcf2ef*/
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 60px auto auto 80px;
+    grid-template-rows: 60px auto auto auto 80px;
     grid-template-areas: "header header"
                          "main main"
-                         "contact contact"
+                         "parallax parallax"
+                         "wave wave"
                          "footer footer"
     ;
 
@@ -35,22 +41,25 @@ header {
 ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     
 }
 
-ul a {
-    padding: 0 10px;
+li a {
+    padding: 20px 15px 0 10px;
+    display: block;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    height: 60px;
+    transition: background-color 1s;
 }
 
-li:hover{
-    border-bottom: 4px solid;
+
+li a:hover{
+    background-color: #6ed1bf;
 
 }
+
 
 
 /* Typography Styling */
@@ -60,7 +69,7 @@ h1 {
     padding: auto;
     letter-spacing: 2px;
     color: #fff;
-    
+
 }
 
 h2 {
@@ -73,11 +82,28 @@ h2 {
 }
 
 h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #3eb7b2;
+    font-size: 3em;
+}
+
+h4 {
+    font-weight: 100;
+    font-style: italic;
+    font-size: .8em;
+    padding: 12px 0;
+}
+
+p, h4 {
     font-family: 'Noto Sans JP', sans-serif;
+    color: #848082;
+    
 }
 
 p {
-    color: #848082;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+    
 }
 
 
@@ -98,11 +124,11 @@ button {
     text-align: center;
     border: none;
     color: #fff;
-    font-weight: bold;
     background-color: #6ed1bf;
     font-size: 1em;
     letter-spacing: 2px;
     margin-top: 30px;
+    
 }
 
 button:hover {
@@ -110,18 +136,20 @@ button:hover {
     color:#fff;
     background-image: linear-gradient(to left, #6ed1bf, #ffd4c1); 
     box-shadow: 5px 5px 8px rgba(41,41,41,.25);
+    font-weight: bold;
 
 }
 
 
+/* contact form styling */
+/* 
 .contact {
     grid-area: contact;
-    
+   
 }
 
-
 .contact-form  {
-    background-color: #fae8e2; /*e4e4e4*/
+    background-color: #fae8e2;
     padding: 0;
     margin-top: -7px;
     display: flex;
@@ -129,11 +157,11 @@ button:hover {
     align-items: align-self;
     padding: 0 5% 60px 5%;
 }
+ */
 
 
-/* contact form styling */
 
-form {
+/* form {
     margin-top: 26px;
 }
 
@@ -168,6 +196,9 @@ input[type=submit] {
     font-size: 1em;
     letter-spacing: 2px;
     margin-top: 30px;
+    width: 120px;
+    height: 40px;
+    
 }
 
 input[type=submit]:hover {
@@ -175,14 +206,52 @@ input[type=submit]:hover {
     color:#fff;
     background-image: linear-gradient(to left, #ffd4c1, #6ed1bf);
     box-shadow: 5px 5px 8px rgba(41,41,41,.25);
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+
+} */
+
+
+/* Parallax */
+.parallax {
+    grid-area: parallax;
+    background-image: url('parallax.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px 0;
+    overflow: hidden;
+
+}
+
+/* Footer Styling */
+
+.wave {
+    width: 100%;
+    grid-area: wave;
+    margin-bottom: -5px;
 
 }
 
 
+ion-icon {
+    color: teal;
+    font-size: 35px;
+    padding-left: 14px;
+}
 
-/* Footer Styling */
+ion-icon:hover {
+    color: #ffd4c1;
+}
 
 footer {
     grid-area: footer;
     background-color: #3eb7b2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    
 }
