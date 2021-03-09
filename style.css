@@ -85,7 +85,6 @@ h1 {
 }
 
 
-
 h2 {
     color: #3eb7b2;
     font-size: 3em;
@@ -93,7 +92,7 @@ h2 {
     letter-spacing: 3px;
 }
 
-h3 {
+h3, h6 {
     font-family: 'Dancing Script', cursive;
     color: #3eb7b2;
     font-size: 3em;
@@ -109,6 +108,10 @@ h4 {
 h5 {
     font-size: 2em;
     color: #3eb7b2;
+}
+
+h6 {
+    font-size: 2em;
 }
 
 
@@ -338,3 +341,32 @@ footer {
     padding-bottom: 30px;
     
 }
+
+
+/* Media Queries */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+   
+  
+  }
+  
+@media only screen and (max-width: 780px) {
+    
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-img {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .area-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+  }
