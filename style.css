@@ -40,8 +40,8 @@ header {
 }
 
 .logo {
-    width: 60px;
-    height: auto;
+    height: 60px;
+    width: auto;
     
 }
 
@@ -96,6 +96,8 @@ h3, h6 {
     font-family: 'Dancing Script', cursive;
     color: #3eb7b2;
     font-size: 3em;
+    margin: 42px 0;
+    
 }
 
 h4 {
@@ -135,14 +137,10 @@ main {
     
 }
 
-
-
 .home-img {
     width: 80%;
     height: auto;
     margin-left: 150px;
-    
-
 }
 
 
@@ -202,6 +200,7 @@ input[type=text],[type=email],textarea {
     border-radius: 50px;
     width: 100%;
     margin-top: 20px;
+    font-size: 1em;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -344,14 +343,11 @@ footer {
 
 
 /* Media Queries */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
-   
-  
-  }
-  
-@media only screen and (max-width: 780px) {
-    
+    .areas{ 
+        flex-direction: column;
+    }
     main {
         flex-direction: column;
         justify-content: center;
@@ -368,5 +364,24 @@ footer {
         justify-content: center;
         align-items: center;
     }
-  
   }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+    }
+    .areas{
+            flex-direction: column;
+    }
+    .contact-form {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-content > h2 {
+        margin: 60px 0;
+    }
+
+  }
+
