@@ -143,6 +143,38 @@ main {
     margin-left: 150px;
 }
 
+.portrait-img {
+    width: 200px;
+    height: auto;
+}
+
+.main-content {
+    margin-right: 52px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    justify-content: center
+    align-items: center;
+    padding: 0 5%;
+    margin: 80px 0;
+}
+.portfolio-img {
+    width: 600px;
+    height: auto;
+}
+
+a.read-more { 
+    font-weight: 100;
+    font-style: italic;
+    padding: 12px 0;
+    color: #ffaa81;
+    text-decoration: none;
+}
+
+a.read-more:hover {
+    color: #3eb7b2;
+}
 
 /* buttons */
 
@@ -348,10 +380,11 @@ footer {
     .areas{ 
         flex-direction: column;
     }
-    main {
-        flex-direction: column;
+    main, .project-2 {
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        
     }
 
     .home-img {
@@ -364,10 +397,35 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    .main-img {
+        order: 1;
+    }
+
+    header {
+        flex-direction: column;
+        height: 120px;
+        z-index: 5;
+        
+    }
+
+
+
+    .portfolio-title {
+        margin-top: 80px;
+    }
+
+    .main-content {
+        padding-left: 22px;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
   }
 
   @media only screen and (min-width: 481px) and (max-width: 768px) {
-    main {
+    main, .project-2 {
         flex-direction: column;
         width: 80%;
     }
