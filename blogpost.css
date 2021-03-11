@@ -23,7 +23,11 @@ p {
     width: 100%;
 }
 
-.hero, .travel, .working-greece, .pack {
+
+/* blog hero images */ 
+
+
+.hero, .travel, .working-greece, .pack, .suitcase {
     grid-area: hero;
     margin: 0;
     background-image: url("explore.jpg");
@@ -50,4 +54,8 @@ p {
 
 .pack {
     background-image: url("pack.jpg");
+}
+
+.suitcase {
+    background-image: url("suitcase.jpg");
 }
