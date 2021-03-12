@@ -6,7 +6,6 @@ body {
     border: 1px solid transparent;
     display: grid;
     grid-template-columns: 50% 50%;
-    max-height: auto;
     grid-template-rows: 60px auto auto auto auto;
     grid-template-areas: "header header"
                          "main main"
